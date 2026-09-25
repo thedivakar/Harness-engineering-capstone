@@ -1,0 +1,18 @@
+{
+  "claim_id": "claim_07_tree_falls_on_car",
+  "policy_id": "POL-1005",
+  "initial_message": "A maple tree from my own front yard came down in the wind last night and landed across my car, which was parked in my driveway. The hood and windshield are smashed. The tree didn't hit the house. POL-1005.",
+  "clarification_responses": {
+    "where was the car": "In my driveway, on my own property. Not on the street.",
+    "parked": "In my own driveway. The tree, the car, and the driveway are all on my property.",
+    "where": "Everything was on my property — my tree, my driveway, my car.",
+    "house": "The house was not hit. Only the car.",
+    "injured": "No injuries, no one was in the car.",
+    "tree": "The tree was on my own property, not the neighbor's."
+  },
+  "expected_outcome": "routed",
+  "expected_type": "auto",
+  "expected_severity": "medium",
+  "ambiguous": true,
+  "candidates": ["property_damage", "auto"]
+}

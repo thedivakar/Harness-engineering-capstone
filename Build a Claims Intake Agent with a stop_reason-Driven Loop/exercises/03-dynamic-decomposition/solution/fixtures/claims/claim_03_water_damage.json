@@ -1,0 +1,19 @@
+{
+  "claim_id": "claim_03_water_damage",
+  "policy_id": "POL-1004",
+  "initial_message": "I came home from a work trip and my basement is flooded. There's about two inches of water across the whole basement, the hardwood floor is buckled, drywall is soaked up to about a foot, and a bunch of stored boxes are ruined. Policy POL-1004.",
+  "clarification_responses": {
+    "source": "It was the supply line under my upstairs bathroom sink — it burst while I was gone, ran for probably two days before I got home.",
+    "where did the water": "From the supply line under my upstairs bathroom sink. It burst while I was away.",
+    "come from": "From a burst supply line under my own upstairs bathroom sink.",
+    "neighbor": "No, it was my own plumbing, not the neighbor's.",
+    "plumbing": "Yes, it was my own plumbing — a burst supply line.",
+    "how long": "Probably two days, I was gone Friday through Sunday.",
+    "injured": "No, no one was home and no one was hurt."
+  },
+  "expected_outcome": "routed",
+  "expected_type": "property_damage",
+  "expected_severity": "high",
+  "ambiguous": true,
+  "candidates": ["property_damage", "liability"]
+}

@@ -1,0 +1,40 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.0, pytest-9.1.1, pluggy-1.6.0 -- /workspace/Engineer a Long-Conversation Context Strategy for a Retail Support Copilot/04-assemble-and-locate/solution/.venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /workspace/Engineer a Long-Conversation Context Strategy for a Retail Support Copilot/04-assemble-and-locate/solution
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 30 items
+
+tests/test_antipatterns.py::test_pruner_has_no_anthropic_import PASSED   [  3%]
+tests/test_antipatterns.py::test_only_tokens_module_uses_count_tokens_or_heuristic PASSED [  6%]
+tests/test_antipatterns.py::test_assemble_module_section_order_contract PASSED [ 10%]
+tests/test_antipatterns.py::test_assembled_context_active_segment_byte_exact SKIPPED [ 13%]
+tests/test_antipatterns.py::test_budget_json_section_counts_sum_consistently SKIPPED [ 16%]
+tests/test_assemble.py::test_assemble_section_order_exact PASSED         [ 20%]
+tests/test_assemble.py::test_active_segment_byte_exact PASSED            [ 23%]
+tests/test_assemble.py::test_no_interleaving_of_resolved_and_active PASSED [ 26%]
+tests/test_case_facts.py::test_required_fields_has_12_entries PASSED     [ 30%]
+tests/test_case_facts.py::test_required_fields_cover_three_issues PASSED [ 33%]
+tests/test_case_facts.py::test_case_facts_dataclass_has_required_fields PASSED [ 36%]
+tests/test_case_facts.py::test_to_markdown_uses_top_level_header_and_fixed_key_order PASSED [ 40%]
+tests/test_case_facts.py::test_extraction_error_lists_missing_fields PASSED [ 43%]
+tests/test_compressor.py::test_summary_dataclass_carries_token_counts PASSED [ 46%]
+tests/test_compressor.py::test_compressed_dataclass_carries_active_text_and_id PASSED [ 50%]
+tests/test_compressor.py::test_summarize_segment_refuses_to_compress_the_active_segment PASSED [ 53%]
+tests/test_compressor.py::test_compression_prompt_is_committed_and_nontrivial PASSED [ 56%]
+tests/test_pruner.py::test_lookup_order_fixture_has_at_least_40_fields PASSED [ 60%]
+tests/test_pruner.py::test_pruner_keeps_exactly_the_contracted_set PASSED [ 63%]
+tests/test_pruner.py::test_pruned_output_under_200_tokens PASSED         [ 66%]
+tests/test_pruner.py::test_pruner_raises_on_missing_required_field PASSED [ 70%]
+tests/test_tokens.py::test_count_zero_for_empty_string PASSED            [ 73%]
+tests/test_tokens.py::test_count_returns_positive_int_for_nonempty_text PASSED [ 76%]
+tests/test_tokens.py::test_count_grows_with_length PASSED                [ 80%]
+tests/test_tokens.py::test_methodology_returns_descriptive_string PASSED [ 83%]
+tests/test_transcript.py::test_transcript_loader_turn_count PASSED       [ 86%]
+tests/test_transcript.py::test_transcript_loader_partition_boundaries PASSED [ 90%]
+tests/test_transcript.py::test_transcript_loader_token_count_in_engineered_range PASSED [ 93%]
+tests/test_transcript.py::test_active_turns_accessor PASSED              [ 96%]
+tests/test_transcript.py::test_canonical_token_function_is_used_everywhere PASSED [100%]
+
+======================== 28 passed, 2 skipped in 3.27s =========================

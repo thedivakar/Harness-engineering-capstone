@@ -1,0 +1,10 @@
+{
+  "claim_id": "claim_08_minor_porch_damage",
+  "policy_id": "POL-1006",
+  "initial_message": "Small claim. The wind last weekend blew about four shingles off the overhang above my back porch. Nothing leaked into the house, no other damage. I just need to get a roofer out to put them back. Probably a $400 fix. POL-1006.",
+  "clarification_responses": {},
+  "expected_outcome": "routed",
+  "expected_type": "property_damage",
+  "expected_severity": "low",
+  "ambiguous": false
+}

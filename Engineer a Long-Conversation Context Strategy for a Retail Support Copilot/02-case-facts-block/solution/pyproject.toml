@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail_context"
+version = "0.2.0"
+description = "Module 2 solution — Retail Customer Support Context Strategy"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic==0.69.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "mypy>=1.10",
+    "ruff>=0.5",
+]
+
+[tool.setuptools.packages.find]
+include = ["retail_context*"]
+
+[tool.setuptools.package-data]
+retail_context = ["prompts/*.md"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+warn_unused_ignores = true

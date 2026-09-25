@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecommerce-team-config"
+version = "0.1.0"
+description = "Validator for the e-commerce team's Claude Code configuration (CLAUDE.md hierarchy, path-scoped rules, commands, skills)"
+requires-python = ">=3.11"
+dependencies = [
+  "pathspec>=0.12",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "mypy>=1.10",
+  "ruff>=0.5",
+  "types-PyYAML>=6.0",
+]
+
+[project.scripts]
+ecommerce-team-config = "ecommerce_team_config.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["ecommerce_team_config*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+disallow_untyped_defs = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "RUF"]

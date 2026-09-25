@@ -1,0 +1,43 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.0, pytest-9.1.1, pluggy-1.6.0 -- /workspace/Build a Multi-Shift Quality Monitoring System with Claude Orchestration/04-fork-scratchpad/solution/.venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /workspace/Build a Multi-Shift Quality Monitoring System with Claude Orchestration/04-fork-scratchpad/solution
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 33 items
+
+tests/test_us01_tiered_state.py::test_hotstate_roundtrip_and_size_budget PASSED [  3%]
+tests/test_us01_tiered_state.py::test_hotstate_rejects_more_than_20_hashes PASSED [  6%]
+tests/test_us01_tiered_state.py::test_hotstate_atomic_write PASSED       [  9%]
+tests/test_us01_tiered_state.py::test_warmstore_creates_table_and_index PASSED [ 12%]
+tests/test_us01_tiered_state.py::test_warmstore_insert_many_roundtrips PASSED [ 15%]
+tests/test_us01_tiered_state.py::test_coldstore_writes_monthly_summary PASSED [ 18%]
+tests/test_us01_tiered_state.py::test_coldstore_handles_empty_month PASSED [ 21%]
+tests/test_us01_tiered_state.py::test_defects_since_uses_index_and_does_not_load_full_table PASSED [ 24%]
+tests/test_us01_tiered_state.py::test_defects_since_respects_limit PASSED [ 27%]
+tests/test_us02_invocation_pipeline.py::test_gather_new_defects_is_pure_passthrough_to_sql PASSED [ 30%]
+tests/test_us02_invocation_pipeline.py::test_gather_new_defects_has_no_python_side_filtering PASSED [ 33%]
+tests/test_us02_invocation_pipeline.py::test_invocation_shapes_are_distinct PASSED [ 36%]
+tests/test_us02_invocation_pipeline.py::test_build_rich_prompt_stays_under_4000_chars PASSED [ 39%]
+tests/test_us02_invocation_pipeline.py::test_run_shift_invokes_client_exactly_once_and_writes_state PASSED [ 42%]
+tests/test_us02_invocation_pipeline.py::test_run_shift_cli_entry_point_works PASSED [ 45%]
+tests/test_us03_crash_recovery.py::test_append_step_writes_and_fsyncs PASSED [ 48%]
+tests/test_us03_crash_recovery.py::test_mid_write_read_reveals_prior_complete_lines PASSED [ 51%]
+tests/test_us03_crash_recovery.py::test_load_returns_incomplete_state PASSED [ 54%]
+tests/test_us03_crash_recovery.py::test_load_returns_complete_state PASSED [ 57%]
+tests/test_us03_crash_recovery.py::test_load_on_missing_file_returns_empty PASSED [ 60%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[1-False-resume] PASSED [ 63%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[29-False-resume] PASSED [ 66%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[30-False-resume] PASSED [ 69%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[31-False-fresh] PASSED [ 72%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[1-True-fresh] PASSED [ 75%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[60-True-fresh] PASSED [ 78%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_empty_manifest_is_fresh PASSED [ 81%]
+tests/test_us03_crash_recovery.py::test_threshold_constant_is_30_minutes PASSED [ 84%]
+tests/test_us03_crash_recovery.py::test_resumed_prompt_has_both_sections PASSED [ 87%]
+tests/test_us04_fork_scratchpad.py::test_scratchpad_append_and_read_order PASSED [ 90%]
+tests/test_us04_fork_scratchpad.py::test_fork_for_hypothesis_copies_state_without_mutating_base PASSED [ 93%]
+tests/test_us04_fork_scratchpad.py::test_two_forks_produce_independent_scratchpads PASSED [ 96%]
+tests/test_us04_fork_scratchpad.py::test_merge_findings_appends_without_rewriting_existing PASSED [100%]
+
+============================== 33 passed in 1.07s ==============================

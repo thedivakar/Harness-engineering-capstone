@@ -1,0 +1,20 @@
+{
+  "claim_id": "claim_04_neighbor_injury",
+  "policy_id": "POL-1002",
+  "initial_message": "My neighbor's nine-year-old daughter slipped and fell on the walkway in front of my house during the ice storm last week. She broke her wrist. Her parents are talking about medical bills. POL-1002.",
+  "clarification_responses": {
+    "where": "On my property — the public sidewalk runs along the edge of my yard, and she was walking up my front walkway to ring the doorbell when she slipped.",
+    "property": "Yes, on my front walkway, which is on my property between the public sidewalk and my front door.",
+    "walkway": "My front walkway, on my property. She was approaching the door.",
+    "treat": "I had not salted that morning. I usually do but I overslept.",
+    "salt": "I had not put down salt that morning.",
+    "ice": "There had been freezing rain overnight and the walkway was icy.",
+    "injured": "Just the daughter — broken wrist, possibly a mild concussion they're still checking.",
+    "medical": "She was taken to urgent care. The parents have mentioned bills around four thousand dollars so far."
+  },
+  "expected_outcome": "routed",
+  "expected_type": "liability",
+  "expected_severity": "high",
+  "ambiguous": true,
+  "candidates": ["liability", "property_damage"]
+}

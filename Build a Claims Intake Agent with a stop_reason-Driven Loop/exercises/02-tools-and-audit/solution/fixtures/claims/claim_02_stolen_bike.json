@@ -1,0 +1,16 @@
+{
+  "claim_id": "claim_02_stolen_bike",
+  "policy_id": "POL-1007",
+  "initial_message": "I'd like to report a theft. My bike was stolen yesterday morning. It's a 2024 commuter bike, I paid about $800 for it last year. My renters policy is POL-1007.",
+  "clarification_responses": {
+    "locked": "Yes, it was locked. I used a Kryptonite U-lock through the frame and rear wheel.",
+    "where": "At the bike rack in front of my office building. There are cameras but I haven't asked building security yet.",
+    "when": "Between 9am when I locked it up and 5pm when I came back out.",
+    "report": "Not yet, I was going to file a police report after I called you.",
+    "police": "Not yet, I was going to file a police report after I called you."
+  },
+  "expected_outcome": "routed",
+  "expected_type": "theft",
+  "expected_severity": "low",
+  "ambiguous": false
+}

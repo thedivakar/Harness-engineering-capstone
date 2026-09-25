@@ -1,0 +1,44 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.0, pytest-9.1.1, pluggy-1.6.0 -- /workspace/Configure Claude Code for a Multi-Surface Monorepo Team/04-plan-mode-and-explore-decision-doc/solution/.venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /workspace/Configure Claude Code for a Multi-Surface Monorepo Team/04-plan-mode-and-explore-decision-doc/solution
+configfile: pyproject.toml
+collecting ... collected 35 items
+
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_01_root_claude_md_has_at_least_one_import PASSED [  2%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_02_two_standards_files_each_imported PASSED [  5%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_03_no_dangling_imports PASSED [  8%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_04_claude_md_under_200_lines PASSED [ 11%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_05_documents_scope_and_user_level_not_versioned PASSED [ 14%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_06_references_memory_command PASSED [ 17%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_01_react_rule_has_component_and_page_globs PASSED [ 20%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_02_api_rule_has_api_glob PASSED [ 22%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_03_tests_rule_has_test_globs PASSED [ 25%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_04_react_file_matches_only_react_rule PASSED [ 28%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_05_api_file_matches_only_api_rule PASSED [ 31%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_06_test_file_matches_react_and_tests PASSED [ 34%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_07_each_rule_has_concrete_body PASSED [ 37%]
+tests/test_us03_review_command.py::test_ac_03_01_exists_with_valid_frontmatter PASSED [ 40%]
+tests/test_us03_review_command.py::test_ac_03_02_description_and_argument_hint PASSED [ 42%]
+tests/test_us03_review_command.py::test_ac_03_03_allowed_tools_is_read_oriented PASSED [ 45%]
+tests/test_us03_review_command.py::test_ac_03_04_must_report_vs_skip_criteria PASSED [ 48%]
+tests/test_us03_review_command.py::test_ac_03_05_two_concrete_io_examples PASSED [ 51%]
+tests/test_us03_review_command.py::test_ac_03_06_is_project_scoped PASSED [ 54%]
+tests/test_us03_review_command.py::test_ac_03_07_interview_pattern_subsection PASSED [ 57%]
+tests/test_us03_review_command.py::test_ac_03_08_interacting_vs_independent_guidance PASSED [ 60%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_01_exists_with_valid_frontmatter PASSED [ 62%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_02_name_description_context_fork PASSED [ 65%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_03_allowed_tools_read_only PASSED [ 68%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_04_three_pre_deployment_checks PASSED [ 71%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_05_rationale_cites_main_session_and_branching_reality PASSED [ 74%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_06_personal_customization_note PASSED [ 77%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_07_skill_vs_claude_md_rubric PASSED [ 80%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_01_doc_exists PASSED        [ 82%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_02_plan_mode_example_three_files_and_rework_phrasing PASSED [ 85%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_03_direct_execution_example PASSED [ 88%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_04_explore_example_with_scratchpad PASSED [ 91%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_05_knight_webb_curriculum_citation PASSED [ 94%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_06_all_cited_file_paths_exist PASSED [ 97%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_07_combined_workflow_example PASSED [100%]
+
+============================== 35 passed in 1.72s ==============================

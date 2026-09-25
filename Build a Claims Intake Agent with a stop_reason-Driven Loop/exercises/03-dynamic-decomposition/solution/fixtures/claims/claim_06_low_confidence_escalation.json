@@ -1,0 +1,22 @@
+{
+  "claim_id": "claim_06_low_confidence_escalation",
+  "policy_id": "POL-1008",
+  "initial_message": "There was a major storm overnight and I have a real mess. I'm calling from my driveway. Something — possibly a tree, possibly part of my neighbor's shed that blew apart — came through my property and there is damage. I can see damage to my parked car, to my garage roof, and what looks like a section of fence between us that's just gone. Emergency services are still here. I have not been able to walk the property. POL-1008.",
+  "clarification_responses": {
+    "tree": "I genuinely cannot tell from here whether what hit my car was a tree or debris from my neighbor's shed. There's too much wreckage piled on top.",
+    "what hit": "I cannot tell yet. There is a mix of tree limbs and what looks like sheet metal from the neighbor's shed across everything.",
+    "car": "The windshield is smashed and the hood is dented but I cannot tell what hit it or how badly the engine is affected. Emergency services have not let me approach it.",
+    "garage": "The roof is partially collapsed on one side. I have no idea whether water has gotten in or whether the structure is sound.",
+    "neighbor": "We have not been able to speak — they are also dealing with their own damage. I do not know if their shed coming apart is what caused the damage to my property or if it was an independent tree.",
+    "fence": "A roughly twenty-foot section of the shared fence is gone. I cannot tell from which side the force came.",
+    "extent": "NO_RESPONSE",
+    "estimate": "I really cannot give you any estimate right now. I am standing in my driveway and emergency services have the area taped off.",
+    "police": "Fire department is here, no police report yet.",
+    "injured": "No one is injured."
+  },
+  "expected_outcome": "escalated",
+  "expected_type": null,
+  "expected_severity": null,
+  "ambiguous": true,
+  "candidates": ["property_damage", "auto", "liability"]
+}

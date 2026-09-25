@@ -1,0 +1,82 @@
+{
+  "POL-1001": {
+    "policy_id": "POL-1001",
+    "policy_holder": "Alex Doe",
+    "policy_type": "homeowners",
+    "coverage": ["property_damage", "theft"],
+    "deductible": 500,
+    "coverage_limit_usd": 250000,
+    "status": "active",
+    "effective_date": "2025-01-15"
+  },
+  "POL-1002": {
+    "policy_id": "POL-1002",
+    "policy_holder": "Jamie Chen",
+    "policy_type": "homeowners_with_liability",
+    "coverage": ["property_damage", "liability"],
+    "deductible": 1000,
+    "coverage_limit_usd": 500000,
+    "status": "active",
+    "effective_date": "2024-08-01"
+  },
+  "POL-1003": {
+    "policy_id": "POL-1003",
+    "policy_holder": "Pat Morgan",
+    "policy_type": "auto_full",
+    "coverage": ["auto"],
+    "deductible": 750,
+    "coverage_limit_usd": 100000,
+    "status": "active",
+    "effective_date": "2025-03-22"
+  },
+  "POL-1004": {
+    "policy_id": "POL-1004",
+    "policy_holder": "Sam Patel",
+    "policy_type": "homeowners_premium",
+    "coverage": ["property_damage", "theft", "liability"],
+    "deductible": 500,
+    "coverage_limit_usd": 750000,
+    "status": "active",
+    "effective_date": "2023-11-10"
+  },
+  "POL-1005": {
+    "policy_id": "POL-1005",
+    "policy_holder": "Riley Kim",
+    "policy_type": "bundle_home_auto",
+    "coverage": ["property_damage", "auto"],
+    "deductible": 1000,
+    "coverage_limit_usd": 400000,
+    "status": "active",
+    "effective_date": "2024-04-05"
+  },
+  "POL-1006": {
+    "policy_id": "POL-1006",
+    "policy_holder": "Jordan Lee",
+    "policy_type": "homeowners_premium",
+    "coverage": ["property_damage", "theft", "liability"],
+    "deductible": 2500,
+    "coverage_limit_usd": 1000000,
+    "status": "active",
+    "effective_date": "2024-01-01"
+  },
+  "POL-1007": {
+    "policy_id": "POL-1007",
+    "policy_holder": "Blake Okafor",
+    "policy_type": "renters",
+    "coverage": ["theft", "property_damage"],
+    "deductible": 250,
+    "coverage_limit_usd": 50000,
+    "status": "active",
+    "effective_date": "2025-06-15"
+  },
+  "POL-1008": {
+    "policy_id": "POL-1008",
+    "policy_holder": "Avery Santos",
+    "policy_type": "bundle_home_auto",
+    "coverage": ["property_damage", "auto", "liability"],
+    "deductible": 1000,
+    "coverage_limit_usd": 600000,
+    "status": "active",
+    "effective_date": "2024-09-20"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "claim_id": "claim_05_auto_collision",
+  "policy_id": "POL-1003",
+  "initial_message": "I was rear-ended at a red light yesterday morning around 8:15am on Route 9. The other driver was going maybe 35 mph, didn't brake at all. My car is totaled — the entire trunk is crushed into the back seat. I have whiplash and a sprained wrist. The other driver's insurance info is on the police report. My policy is POL-1003.",
+  "clarification_responses": {},
+  "expected_outcome": "routed",
+  "expected_type": "auto",
+  "expected_severity": "high",
+  "ambiguous": false
+}

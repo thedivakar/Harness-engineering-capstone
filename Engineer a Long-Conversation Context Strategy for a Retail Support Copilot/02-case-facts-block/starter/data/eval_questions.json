@@ -1,0 +1,47 @@
+{
+  "description": "Six eval questions whose answers span all three issues. Pass threshold ≥ 5/6 against compressed context. Q1 and Q6 must fail when case-facts block is removed (control), proving the block is load-bearing.",
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "What was the actual refund amount processed for order ORD-77310?",
+      "expected_fragment": "22.14",
+      "source": "case_facts",
+      "required_in_control_fail": true
+    },
+    {
+      "id": "Q2",
+      "question": "Why did the customer cancel their subscription?",
+      "expected_fragment": "duplicate",
+      "source": "subscription_summary",
+      "required_in_control_fail": false
+    },
+    {
+      "id": "Q3",
+      "question": "What is the failure code on the current payment-method update?",
+      "expected_fragment": "AVS_MISMATCH",
+      "source": "active_verbatim",
+      "required_in_control_fail": false
+    },
+    {
+      "id": "Q4",
+      "question": "What is the last-4 of the new card the customer is trying to add?",
+      "expected_fragment": "7782",
+      "source": "active_verbatim",
+      "required_in_control_fail": false
+    },
+    {
+      "id": "Q5",
+      "question": "Did the customer receive their subscription proration refund?",
+      "expected_fragment": "prorated",
+      "source": "subscription_summary",
+      "required_in_control_fail": false
+    },
+    {
+      "id": "Q6",
+      "question": "What is the structured status of the payment-method update issue (use the exact status token from the case record, not a paraphrase)?",
+      "expected_fragment": "in_progress",
+      "source": "case_facts",
+      "required_in_control_fail": true
+    }
+  ]
+}

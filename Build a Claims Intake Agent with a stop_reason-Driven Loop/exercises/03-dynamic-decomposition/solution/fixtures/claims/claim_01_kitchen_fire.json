@@ -1,0 +1,10 @@
+{
+  "claim_id": "claim_01_kitchen_fire",
+  "policy_id": "POL-1001",
+  "initial_message": "Hi, I need to file a claim. There was a fire in my kitchen yesterday evening. The stove caught fire while I was sauteing onions — grease flare-up. I got it out with the extinguisher but the kitchen cabinets above the stove are charred and there's smoke damage on the ceiling and walls. The rest of the house is fine, no one was hurt. My policy number is POL-1001.",
+  "clarification_responses": {},
+  "expected_outcome": "routed",
+  "expected_type": "property_damage",
+  "expected_severity": "medium",
+  "ambiguous": false
+}

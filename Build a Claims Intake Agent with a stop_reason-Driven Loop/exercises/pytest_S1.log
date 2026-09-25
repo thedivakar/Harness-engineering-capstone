@@ -1,0 +1,13 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.0, pytest-9.1.1, pluggy-1.6.0
+rootdir: /workspace/Build a Claims Intake Agent with a stop_reason-Driven Loop/exercises/03-dynamic-decomposition/solution
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collected 29 items
+
+tests/test_antipatterns.py ....                                          [ 13%]
+tests/test_fixtures.py ........                                          [ 41%]
+tests/test_loop.py .....                                                 [ 58%]
+tests/test_tools.py ............                                         [100%]
+
+============================== 29 passed in 0.28s ==============================
